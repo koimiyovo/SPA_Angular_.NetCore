@@ -1,0 +1,15 @@
+<form (submit)="submitBlog()">
+    <div>
+        <label>Titre</label>
+        <input [(ngModel)]="titre" name="titre" />
+    </div>
+    <div>
+        <label>Sous-titre</label>
+        <input [(ngModel)]="sousTitre" name="sousTitre" />
+    </div>
+    <div>
+        <label>Catégorie</label>
+        <input [(ngModel)]="categorie" name="categorie" />
+    </div>
+    <button type="submit">Sauvegarder le blog</button>
+</form>

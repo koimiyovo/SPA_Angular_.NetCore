@@ -1,0 +1,20 @@
+<form (submit)="onSubmit()">
+    <div>
+        <label>Nom de famille</label>
+        <input [(ngModel)]="nom" name="nom" />
+    </div>
+    <div>
+        <label>Prénom</label>
+        <input [(ngModel)]="prenom" name="prenom" />
+    </div>
+    <div>
+        <label>Email</label>
+        <input [(ngModel)]="email" name="email" />
+    </div>
+    <div>
+        <label>Mot de passe</label>
+        <input [(ngModel)]="motDePasse" name="motDePasse" type="password" />
+    </div>
+
+    <button type="submit">S'inscrire</button>
+</form>

@@ -1,0 +1,18 @@
+<form (submit)="submitArticle()">
+    <div>
+        <label>Titre</label>
+        <input [(ngModel)]="titre" name="titre" />
+    </div>
+    <div>
+        <label>Auteur</label>
+        <input [(ngModel)]="auteur" name="auteur" />
+    </div>
+    <div>
+        <label>Texte</label>
+        <textarea [(ngModel)]="texte" name="texte"></textarea>
+    </div>
+    <select [(ngModel)]="selectedBlog" name="blog">
+        <option *ngFor="let blog of allBlogs" [ngValue]="blog">{{ blog.titre }}</option>
+    </select>
+    <button type="submit">Sauvegarder l'article</button>
+</form>
